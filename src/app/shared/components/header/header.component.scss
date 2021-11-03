@@ -475,6 +475,8 @@ button.search-submit {
     border: solid $blue-color;
     border-width: 2px 2px 2px 0px;
     height: 20px;
+    z-index: 3;
+    padding-bottom: 0px;
   }
 }
 .filter-container.filter-apply .filtered-item.openstate {
@@ -483,6 +485,7 @@ button.search-submit {
     border-width: 2px 0px 2px 2px;
     border-bottom-color: #dcdcdc;
     border-radius: 5px 0px 0px 0px;
+    z-index: 3;
   }
   .k-select {
     border: solid $blue-color;
@@ -510,6 +513,9 @@ button.search-submit {
   padding: 5px;
   border-radius: 0px 5px 5px;
   max-height: 300px;
+  z-index: 1;
+  top: 4px;
+  border: 2px solid $blue-color;
 }
 .filter-label {
   font-size: $smaller-font;

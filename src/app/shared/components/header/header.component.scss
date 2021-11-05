@@ -556,13 +556,8 @@ button.search-submit {
 
 .drop-group div.drop-row:nth-child(even):hover {
   cursor: pointer;
-  background: $grey-light;
+  background: rgba(0, 0, 0, 0.4);
   color: $black;
-}
-.drop-group div.drop-row:nth-child(odd):hover {
-  cursor: pointer;
-  background: $grey-dark;
-  color: $white;
 }
 .drop-row input[type='checkbox'] {
   display: inline-block;
@@ -579,7 +574,7 @@ button.search-submit {
   -webkit-box-shadow: none !important;
   -moz-box-shadow: none !important;
   box-shadow: none !important;
-  transition: .2s ease-in all;
+  transition: 0.2s ease-in all;
 }
 .drop-row input[type='checkbox']:focus {
   outline: none;
@@ -594,7 +589,17 @@ button.search-submit {
   text-align: center;
   line-height: 15px;
 }
-.drop-row .input[type='checkbox']:checked + .checkbox::before {content: '';width: 3px;height: 7px;display: block;border: 2px solid white;position: absolute;border-width: 0px 2px 2px 0px;transform: rotate(45deg);margin-left: -20px;margin-top: 1px;}
+.drop-row input[type='checkbox']:checked ~ .checkbox::before {
+  content: '';
+  width: 3px;
+  height: 7px;
+  display: block;
+  border: 2px solid white;
+  position: absolute;
+  border-width: 0px 2px 2px 0px;
+  transform: rotate(45deg);
+  margin-left: -20px;
+  margin-top: 1px;
 }
 
 .overlayer {

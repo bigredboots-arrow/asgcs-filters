@@ -575,9 +575,11 @@ button.search-submit {
   content: '';
   margin-right: 10px;
   border-radius: 2px;
+  cursor: pointer;
   -webkit-box-shadow: none !important;
   -moz-box-shadow: none !important;
   box-shadow: none !important;
+  transition: .2s ease-in all;
 }
 .drop-row input[type='checkbox']:focus {
   outline: none;
@@ -588,16 +590,11 @@ button.search-submit {
 }
 .drop-row input[type='checkbox']:checked {
   background-color: $green-color;
+  border-color: $green-color;
   text-align: center;
   line-height: 15px;
 }
-.drop-row .input[type='checkbox']:checked ~ label:before {
-  display: inline-block;
-  transform: rotate(45deg);
-  height: 6px;
-  width: 2px;
-  border-bottom: 2px solid $white;
-  border-right: 2px solid $white;
+.drop-row .input[type='checkbox']:checked + .checkbox::before {content: '';width: 3px;height: 7px;display: block;border: 2px solid white;position: absolute;border-width: 0px 2px 2px 0px;transform: rotate(45deg);margin-left: -20px;margin-top: 1px;}
 }
 
 .overlayer {

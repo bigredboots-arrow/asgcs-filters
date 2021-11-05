@@ -58,10 +58,12 @@ export class HeaderComponent implements OnInit {
   }
 
   activate(event) {
-    event.currentTarget.classList.add('filtered-item');
-    event.currentTarget.classList.toggle('openstate');
-    event.currentTarget.parentNode.parentNode.classList.add('filter-apply');
-    event.currentTarget.parentNode.parentNode.parentNode.parentNode.classList.add(
+    event.currentTarget.parentNode.classList.add('filtered-item');
+    event.currentTarget.parentNode.classList.toggle('openstate');
+    event.currentTarget.parentNode.parentNode.parentNode.classList.add(
+      'filter-apply'
+    );
+    event.currentTarget.parentNode.parentNode.parentNode.parentNode.parentNode.classList.add(
       'filter-applied'
     );
   }

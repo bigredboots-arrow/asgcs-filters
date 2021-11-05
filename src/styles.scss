@@ -104,8 +104,6 @@ a {
 .k-dropdown-wrap {
   padding: 0px;
   width: 100%;
-  display: flex;
-  flex-flow: row nowrap;
   box-sizing: border-box;
   position: relative;
   transition: $fast-transition;
@@ -115,6 +113,8 @@ a {
   background-color: transparent;
   background-image: none;
   z-index: 3;
+  display: grid;
+  grid-template-columns: auto 22px;
 }
 .k-icon {
   width: 0px;

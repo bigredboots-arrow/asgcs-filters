@@ -581,7 +581,7 @@ button.search-submit {
 }
 .drop-row input[type='checkbox']:focus {
   outline: none;
-  border: none !important;
+  border: 1px solid #333;
   -webkit-box-shadow: none !important;
   -moz-box-shadow: none !important;
   box-shadow: none !important;
@@ -591,7 +591,7 @@ button.search-submit {
   text-align: center;
   line-height: 15px;
 }
-.drop-row .checkbox:checked:before {
+.drop-row .input[type='checkbox']:checked ~ label:before {
   display: inline-block;
   transform: rotate(45deg);
   height: 6px;

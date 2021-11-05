@@ -544,12 +544,46 @@ button.search-submit {
 }
 .drop-row {
   padding: 10px 10px;
+  display: flex;
+  align-items: center;
+}
+.drop-row input[type='checkbox'] {
+  display: inline-block;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: 1px solid #333;
+  width: 15px;
+  height: 15px;
+  content: '';
+  margin-right: 10px;
+  -webkit-box-shadow: none !important;
+  -moz-box-shadow: none !important;
+  box-shadow: none !important;
+}
+.drop-row input[type='checkbox']:focus {
+  outline: none;
+  border: none !important;
+  -webkit-box-shadow: none !important;
+  -moz-box-shadow: none !important;
+  box-shadow: none !important;
+}
+.drop-row input[type='checkbox']:focus {
+  background-color: green;
+  text-align: center;
+  line-height: 15px;
 }
 .drop-group div:nth-child(even) {
   background: $grey-light;
 }
 .drop-group div:nth-child(odd) {
   background: $grey-lighter;
+}
+
+.drop-group div.drop-row:hover {
+  cursor: pointer;
+  background: $grey-darkest;
+  color: $grey-lightest;
 }
 .overlayer {
   background: $overlayer;

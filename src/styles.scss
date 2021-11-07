@@ -46,11 +46,11 @@ a {
   color: $white;
 }
 
-//Temporary theme for Kendo UI drop downs
+//Theme for Kendo UI drop downs
 .k-input {
   padding: 0px 5px;
   background: $grey-lightest;
-  color: $black;
+  color: $grey-dark;
   font-size: $smaller-font;
   border-radius: 5px 0px 0px 5px;
   display: flex;
@@ -126,6 +126,16 @@ a {
   border-right: 6px solid transparent;
   border-top: 6px solid $grey-darker;
 }
+
+.filter-container.filter-apply .filtered-item .k-input {
+  font-size: 0px;
+}
+.filter-container.filter-apply .filtered-item .k-input:before {
+  content: 'Selected Item';
+  display: inline-block;
+  font-size: 12px;
+}
+
 @media only screen and (max-width: 1200px) {
   .main-content.open .left-side-content .k-input span,
   .main-content.mobile .left-side-content .k-input span {

@@ -518,6 +518,9 @@ button.search-submit {
   overflow-y: auto;
   margin-top: 5px;
 }
+.filter-container .checkbox {
+  position: relative;
+}
 .filter-label {
   font-size: $smaller-font;
   padding-bottom: 2px;
@@ -543,7 +546,7 @@ button.search-submit {
   border: 1px solid grey;
 }
 .drop-row {
-  padding: 10px 10px;
+  padding: 6px 10px;
   display: flex;
   align-items: center;
 }
@@ -554,7 +557,8 @@ button.search-submit {
   background: $grey-light;
 }
 
-.drop-group div.drop-row:nth-child(even):hover {
+.drop-group div.drop-row:nth-child(even):hover,
+.drop-group div.drop-row:nth-child(odd):hover {
   cursor: pointer;
   background: rgba(0, 0, 0, 0.4);
   color: $black;
@@ -584,8 +588,8 @@ button.search-submit {
   box-shadow: none !important;
 }
 .drop-row input[type='checkbox']:checked {
-  background-color: $green-color;
-  border-color: $green-color;
+  background-color: $blue-color;
+  border-color: $blue-color;
   text-align: center;
   line-height: 15px;
 }
@@ -595,11 +599,11 @@ button.search-submit {
   height: 7px;
   display: block;
   border: 2px solid white;
-  position: absolute;
   border-width: 0px 2px 2px 0px;
   transform: rotate(45deg);
   margin-left: -20px;
-  margin-top: 1px;
+  position: absolute;
+  top: 2px;
 }
 
 .overlayer {

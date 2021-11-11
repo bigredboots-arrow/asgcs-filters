@@ -471,6 +471,7 @@ button.search-submit {
     border: solid $blue-color;
     border-width: 2px 0px 2px 2px;
     color: $black;
+    background: $white;
   }
   .k-select {
     border: solid $blue-color;
@@ -478,6 +479,7 @@ button.search-submit {
     height: 20px;
     z-index: 3;
     padding-bottom: 0px;
+    background: $white;
   }
 }
 .filter-container.filter-apply .filtered-item.openstate {
@@ -521,6 +523,14 @@ button.search-submit {
 }
 .filter-container .checkbox {
   position: relative;
+  cursor: pointer;
+}
+.filter-container .checkbox span {
+  width: 205px;
+  display: block;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow-x: hidden;
 }
 .filter-label {
   font-size: $smaller-font;
@@ -552,10 +562,10 @@ button.search-submit {
   align-items: center;
 }
 .drop-group div:nth-child(even) {
-  background: $grey-lighter;
+  background: $grey-lightest;
 }
 .drop-group div:nth-child(odd) {
-  background: $grey-light;
+  background: $grey-lighter;
 }
 
 .drop-group div.drop-row:nth-child(even):hover,

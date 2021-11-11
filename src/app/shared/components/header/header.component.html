@@ -152,7 +152,7 @@
 
     <!--THIS FILTER SHOULD SHOW FOR OUTBOUND SHIPPING OVERVIEW and OUTBOUND SHIPPING DISCOVER SCREENS ONLY -->
     <div
-      class="filter-block"
+      class="filter-block filter-active"
       [ngClass]="{ 'd-none': hideFilters }"
       #outboundfilters
       *ngIf="module == 'outbound'"
@@ -177,26 +177,31 @@
                 <div class="drop-group">
                   <div class="checkbox drop-row">
                     <input type="checkbox" id="checkbox-1" />
-                    <label for="checkbox-1" class="checkbox">Element one</label>
+                    <label for="checkbox-1" class="checkbox"
+                      ><span>This line item has 35 characters XX</span></label
+                    >
                   </div>
                   <div class="checkbox drop-row">
                     <input type="checkbox" id="checkbox-2" />
-                    <label for="checkbox-2" class="checkbox">Element two</label>
+                    <label for="checkbox-2" class="checkbox"
+                      ><span>This line item has quite a few more than 35
+                      characters</span></label
+                    >
                   </div>
                   <div class="checkbox drop-row">
                     <input type="checkbox" id="checkbox-3" />
                     <label for="checkbox-3" class="checkbox"
-                      >Element three</label
+                      ><span>Element three</span></label
                     >
                   </div>
                   <div class="checkbox drop-row">
                     <input type="checkbox" id="checkbox-4" />
-                    <label for="checkbox-" class="checkbox">Element four</label>
+                    <label for="checkbox-" class="checkbox"><span>Element four</span></label>
                   </div>
                   <div class="checkbox drop-row">
                     <input type="checkbox" id="checkbox-5" />
                     <label for="checkbox-1" class="checkbox"
-                      >Element five</label
+                      ><span>Element five</span></label
                     >
                   </div>
                 </div>
